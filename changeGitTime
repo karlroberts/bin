@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# read from std in and while loop through calling command
+while read line
+do
+  read commitish time <<< $line
+  git cdc ${commitish} "${time}"
+done <&0

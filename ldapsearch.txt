@@ -1,0 +1,2 @@
+ldapsearch -H ldaps://ldap.services.ecetera.com.au -D "uid=karl.roberts,ou=People,dc=ecetera,dc=com,dc=au" -w "${passwd}" -b "dc=ecetera,dc=com,dc=au" -s sub -LLL -u "uid=karl.roberts"
+
